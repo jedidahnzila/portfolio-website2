@@ -1,0 +1,220 @@
+body{
+    margin: auto;
+    padding: 0;
+    max-width: 2000px;
+    background-color: antiquewhite;
+}
+.row{
+    max-width: 100%;
+    max-height: 600px;
+    padding: 20px;
+}
+.nav-links{
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    padding-right: 20px;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline;
+}
+.nav-links a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.header-info p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.personal-info .icons{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.about-info{
+    max-width: 60%;
+    margin: auto;
+}
+.about-info .top-section{
+    margin: auto;
+    max-width: 50%;
+}
+.about-info .lower-section{
+    margin: auto;
+    max-width: 70%;
+}
+.about-title{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.about-title p{
+    font-size: 24px;
+}
+.about-info button{
+    padding: 30px;
+    border-radius: 30%;
+    width: 250px;
+    height: 200px;
+}
+.experience-title{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.experience-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: auto;
+}
+.first-column{
+    border: 1px solid black;
+    padding: 70px;
+    border-radius: 40px;
+}
+.second-column{
+    border: 1px solid black;
+    padding: 70px;
+    border-radius: 40px;
+}
+.projects-title{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.project-displays{
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    flex-basis: 10%;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+}
+.project-displays button{
+    padding: 20px;
+    border-radius: 40px;
+}
+#Contacts{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#Contacts button{
+    padding: 20px;
+    border-radius: 40px;
+}
+.footer{
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer ul li{
+    list-style-type: none;
+    display: inline; 
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+    
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+    .header-info, .experience-sections, .about-info, .project-displays {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .header-info {
+        max-width: 50%;
+    }
+
+    .about-info button, .project-displays button, .first-column, .second-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .header-info, .about-info, .experience-sections {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .header-info p, .about-title p {
+        font-size: 18px;
+    }
+
+    .about-info button, .project-displays button {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
