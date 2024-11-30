@@ -178,7 +178,18 @@ img{
     .about-info button, .project-displays button, .first-column, .second-column {
         width: 100%;
         padding: 20px;
+        
     }
+    #Contacts p{
+        display: none;
+    }
+     #Contacts h2{
+       margin-top: 120px;
+     }
+
+     #Contacts button{
+        margin-top: 10px;
+     }
 
     img {
         width: 200px;
